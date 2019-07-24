@@ -1,0 +1,20 @@
+
+
+# intellij idea
+*.log
+*.iml
+*.ipr
+*.iws
+.idea
+*.xml
+
+# other?
+.history
+.scala_dependencies
+.cache
+.cache-main
+
+#general
+*.class
+.idea/
+target/
