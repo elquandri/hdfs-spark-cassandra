@@ -33,8 +33,9 @@ Composant	   	Version
 Avant de lancer l’application vous devez la configurer, cela se fait au niveau du fichier de configuration de l’application, qui est dans le chemin (/src/main/resources/Cassandra.conf).
 
 
-Traitements : 
+# Traitements 
 -	Lancer l’application sur le dcos bootstrap avec la commande 
 dcos spark --name="spark-2-3" run --submit-args="--conf spark.mesos.containerizer=docker --conf spark.driver.memory=4G --conf spark.cores.max=3 --conf spark.executor.cores=1 --conf spark.executor.memory=4G --conf spark.mesos.executor.docker.forcePullImage=false --conf spark.eventLog.enabled=true --conf spark.eventLog.dir=hdfs:///spark_history  --class hdfsToCassandra hdfs:///jars/HDFS-Spark-Cassandra-assembly-0.1.jar"
  
-Validation du test : Vérifier le statut du test dans le fichier résultat. 
+# Validation du test 
+Vérifier le statut du test dans le fichier résultat. 
